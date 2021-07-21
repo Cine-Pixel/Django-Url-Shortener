@@ -1,6 +1,7 @@
 # Django URL shortener
 
 Url shortener with analitics and authentication
+[Demo](https://smrl.herokuapp.com/)
 
 ### Screenshots
 
@@ -19,7 +20,6 @@ Url shortener with analitics and authentication
     ```
 
 3. Apply migrations and run server
-
     ```sh
     python manage.py migrate
     python manage.py runserver
