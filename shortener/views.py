@@ -23,8 +23,8 @@ class ShortenView(LoginRequiredMixin, View):
         context = {
             "form": form,
             "home_link": "active",
-            # "short_url": f"{request.get_host()}/{short}" if short else None
-            "short_url": f"sm.rl/{short}" if short else None
+            "short_url": f"{request.get_host()}/{short}" if short else None
+            # "short_url": f"sm.rl/{short}" if short else None
         }
 
         return render(request, 'shortener/index.html', context)

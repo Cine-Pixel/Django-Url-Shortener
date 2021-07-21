@@ -27,8 +27,8 @@
                     <td class="copyable-cell">
                         <i class="linkify icon"></i>
                         <span class="copyable">
-                            {% comment %} {{ request.get_host }}/{{ surl.short}} {% endcomment %}
-                            sm.rl/{{ surl.short}}
+                            {{ request.get_host }}/{{ surl.short}}
+                            {% comment %} sm.rl/{{ surl.short}} {% endcomment %}
                         </span>
                         <span class="tooltip ui pointing below label">Copy to clipboard</span>
                     </td>
