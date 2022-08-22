@@ -44,9 +44,7 @@ class ShortenView(LoginRequiredMixin, View):
             return redirect(reverse("shortener:index")+"?short="+short)
 
 
-class RedirectView(LoginRequiredMixin, View):
-    login_url = "/login/"
-
+class RedirectView(View):
     def get(self, request: HttpRequest, short: str, *args, **kwargs):
         surl = Surl.objects.filter(short=short).first()
         if surl:
